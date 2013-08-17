@@ -4,10 +4,22 @@ var App = (function () {
 		interval: null,
 		setup: function(){
 			var _self = this;
+			var toggleButton = document.getElementById('toggle');
+
 			document.querySelector('form').addEventListener('submit', function(e){
 				e.preventDefault();
 				_self.Ants.generate(parseInt(document.querySelector('input').value, 10));
 			});
+
+			toggleButton.addEventListener('click', function(){
+				if(toggleButton.innerHTML == 'TURN ON'){
+					_self.Light.handler(50);
+				} else {
+					_self.Light.handler(5);
+				}
+			});
+
+
 
 			// event handler event type
 			window.addEventListener('devicelight', function(event) {
@@ -81,9 +93,11 @@ var App = (function () {
 			handler: function(value){
 				if(value < 10) {
 					document.querySelector('body').className = 'night';
+					document.getElementById('toggle').innerHTML = 'TURN ON';
 					App.Light.id = requestAnimationFrame(App.Ants.animate);
 				} else {
 					document.querySelector('body').className = '';
+					document.getElementById('toggle').innerHTML = 'TURN OFF';
 					cancelAnimationFrame(App.Light.id);
 				}
 			}
