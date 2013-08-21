@@ -48,6 +48,7 @@ var App = (function () {
 					newAnt.style.top = '10px';
 					newAnt.setAttribute('data-scale',randomScale);
 					newAnt.style.MozTransform = 'scale('+randomScale+','+randomScale+') rotate('+randomRotate+'deg)';
+					newAnt.style.WebkitTransform = 'scale('+randomScale+','+randomScale+') rotate('+randomRotate+'deg)';
 					newAnt.style.left = randomX + "px";
 					newAnt.style.top = randomY + "px";
 
@@ -78,6 +79,7 @@ var App = (function () {
 							angleInDegrees = angleInDegrees - 180;
 							scale = ant.getAttribute('data-scale');
 							ant.style.MozTransform = 'scale('+scale+','+scale+') rotate('+angleInDegrees+'deg)';
+							ant.style.WebkitTransform = 'scale('+scale+','+scale+') rotate('+angleInDegrees+'deg)';
 							ant.style.left = randomX + "px";
 							ant.style.top = randomY + "px";
 						}

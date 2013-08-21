@@ -12,6 +12,7 @@ body {
 	height: 100%;
 	box-sizing: border-box;
 	transition: background-color 1000ms linear;
+	-webkit-transition: background-color 1000ms linear;
 }
 
 body.night {
@@ -25,6 +26,32 @@ div {
 body.night .ant div {
 	background: #555;
 	transition: background-color 1000ms linear;
+	-webkit-transition: background-color 1000ms linear;
+}
+
+form {
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+form input[type=text] {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background: #f0f0f0;
+	line-height: 18px;
+	font-size: 18px;
+	padding: 10px;
+	width: 200px;
+}
+
+#toggle {
+	top: 3px;
+	right: 205px;
+	position: absolute;
+	width: 100px;
+	height: 35px;
+	cursor: pointer;
 }
 
 .ant {
@@ -34,6 +61,8 @@ body.night .ant div {
 	background-color: transparent;
 	transform-origin: center center;
 	transition: all 0.2s linear, top 2s linear, left 2s linear;
+	-webkit-transform-origin: center center;
+	-webkit-transition: all 0.2s linear, top 2s linear, left 2s linear;
 }
 
 .aerial {
@@ -41,10 +70,12 @@ body.night .ant div {
 	left: 48px;
 	position: absolute;
 	transform-origin: center left;
+	-webkit-transform-origin: center left;
 }
 
 .night .aerial {
 	animation: linear aerial 1s infinite;
+	-webit-animation: linear aerial 1s infinite;
 }
 
 .aerial .left {
@@ -55,6 +86,8 @@ body.night .ant div {
 	position: absolute;
 	transform: rotate(-35deg);
 	transform-origin: bottom left;
+	-webkit-transform: rotate(-35deg);
+	-webkit-transform-origin: bottom left;
 }
 
 .aerial .left .arm {
@@ -63,6 +96,8 @@ body.night .ant div {
 	margin-top: -25px;
 	transform: rotate(-20deg);
 	transform-origin: bottom left;
+	-webkit-transform: rotate(-20deg);
+	-webkit-transform-origin: bottom left;
 }
 
 .aerial .right {
@@ -73,6 +108,8 @@ body.night .ant div {
 	position: absolute;
 	transform: rotate(35deg);
 	transform-origin: top left;
+	-webkit-transform: rotate(35deg);
+	-webkit-transform-origin: top left;
 }
 
 .aerial .right .arm {
@@ -81,6 +118,8 @@ body.night .ant div {
 	margin-top: 25px;
 	transform: rotate(20deg);
 	transform-origin: top left;
+	-webkit-transform: rotate(20deg);
+	-webkit-transform-origin: top left;
 }
 
 
@@ -127,10 +166,13 @@ body.night .ant div {
 	position: absolute;
 	transform: rotate(15deg);
 	transform-origin: bottom left;
+	-webkit-transform: rotate(15deg);
+	-webkit-transform-origin: bottom left;
 }
 
 .night .paw .left {
 	animation: paw-left linear 0.5s infinite;
+	-webkit-animation: paw-left linear 0.5s infinite;
 }
 
 .paw .left .arm {
@@ -139,10 +181,13 @@ body.night .ant div {
 	margin-top: -25px;
 	transform: rotate(20deg);
 	transform-origin: bottom left;
+	-webkit-transform: rotate(20deg);
+	-webkit-transform-origin: bottom left;
 }
 
 .night .paw .left .arm {
 	animation: paw-left-arm linear 0.5s infinite;
+	-webkit-animation: paw-left-arm linear 0.5s infinite;
 }
 
 .paw .right {
@@ -153,10 +198,13 @@ body.night .ant div {
 	position: absolute;
 	transform: rotate(-15deg);
 	transform-origin: top left;
+	-webkit-transform: rotate(-15deg);
+	-webkit-transform-origin: top left;
 }
 
 .night .paw .right {
 	animation: paw-right linear 0.5s infinite;
+	-webkit-animation: paw-right linear 0.5s infinite;
 }
 
 .paw .right .arm {
@@ -165,10 +213,13 @@ body.night .ant div {
 	margin-top: 25px;
 	transform: rotate(-20deg);
 	transform-origin: top left;
+	-webkit-transform: rotate(-20deg);
+	-webkit-transform-origin: top left;
 }
 
 .night .paw .right .arm {
 	animation: paw-right-arm linear 0.5s infinite;
+	-webkit-animation: paw-right-arm linear 0.5s infinite;
 }
 
 .paw1 .left {
@@ -177,6 +228,7 @@ body.night .ant div {
 
 .night .paw1 .left {
 	animation: paw1-left linear 0.5s infinite;
+	-webkit-animation: paw1-left linear 0.5s infinite;
 }
 
 .paw1 .left .arm {
@@ -184,10 +236,13 @@ body.night .ant div {
 	margin-top: -40px;
 	transform: rotate(40deg);
 	transform-origin: bottom left;
+	-webkit-transform: rotate(40deg);
+	-webkit-transform-origin: bottom left;
 }
 
 .night .paw1 .left .arm {
 	animation: paw1-left-arm linear 0.5s infinite;
+	-webkit-animation: paw1-left-arm linear 0.5s infinite;
 }
 
 .paw1 .right {
@@ -196,6 +251,7 @@ body.night .ant div {
 
 .night .paw1 .right {
 	animation: paw1-right linear 0.5s infinite;
+	-webkit-animation: paw1-right linear 0.5s infinite;
 }
 
 .paw1 .right .arm {
@@ -203,10 +259,13 @@ body.night .ant div {
 	margin-top: 25px;
 	transform: rotate(-40deg);
 	transform-origin: top left;
+	-webkit-transform: rotate(-40deg);
+	-webkit-transform-origin: top left;
 }
 
 .night .paw1 .right .arm {
 	animation: paw1-right-arm linear 0.5s infinite;
+	-webkit-animation: paw1-right-arm linear 0.5s infinite;
 }
 
 .paw2 .left {
@@ -215,10 +274,13 @@ body.night .ant div {
 	position: absolute;
 	transform: rotate(30deg);
 	transform-origin: bottom left;
+	-webkit-transform: rotate(30deg);
+	-webkit-transform-origin: bottom left;
 }
 
 .night .paw2 .left {
 	animation: paw2-left linear 0.5s infinite;
+	-webkit-animation: paw2-left linear 0.5s infinite;
 }
 
 .paw2 .left .arm {
@@ -226,10 +288,13 @@ body.night .ant div {
 	margin-top: -40px;
 	transform: rotate(35deg);
 	transform-origin: bottom left;
+	-webkit-transform: rotate(35deg);
+	-webkit-transform-origin: bottom left;
 }
 
 .night .paw2 .left .arm {
 	animation: paw2-left-arm linear 0.5s infinite;
+	-webkit-animation: paw2-left-arm linear 0.5s infinite;
 }
 
 .paw2 .right {
@@ -239,10 +304,13 @@ body.night .ant div {
 	position: absolute;
 	transform: rotate(-30deg);
 	transform-origin: top left;
+	-webkit-transform: rotate(-30deg);
+	-webkit-transform-origin: top left;
 }
 
 .night .paw2 .right {
 	animation: paw2-right linear 0.5s infinite;
+	-webkit-animation: paw2-right linear 0.5s infinite;
 }
 
 .paw2 .right .arm {
@@ -250,10 +318,13 @@ body.night .ant div {
 	margin-top: 30px;
 	transform: rotate(-35deg);
 	transform-origin: top left;
+	-webkit-transform: rotate(-35deg);
+	-webkit-transform-origin: top left;
 }
 
 .night .paw2 .right .arm {
 	animation: paw2-right-arm linear 0.5s infinite;
+	-webkit-animation: paw2-right-arm linear 0.5s infinite;
 }
 
 /*======================
@@ -440,203 +511,178 @@ body.night .ant div {
     Webkit Keyframes
 ======================*/
 
-
-@keyframes aerial {
+@-webkit-keyframes aerial {
 	0% {
-		transform: rotateY(-35deg);
+		-webkit-transform: rotateY(-35deg);
 	}
 	50% {
-		transform: rotateY(35deg);
+		-webkit-transform: rotateY(35deg);
 	}
 	100% {
-		transform: rotateY(-35deg);
+		-webkit-transform: rotateY(-35deg);
 	}
 }
 
-@keyframes paw-left {
+@-webkit-keyframes paw-left {
 	00% {
-		transform: rotate(-15deg);
+		-webkit-transform: rotate(-15deg);
 	}
 	20% {
-		transform: rotate(-15deg);
+		-webkit-transform: rotate(-15deg);
 	}
 	40% {
-		transform: rotate(15deg);
+		-webkit-transform: rotate(15deg);
 	}
 	100% {
-		transform: rotate(-15deg);
+		-webkit-transform: rotate(-15deg);
 	}
 }
 
-@keyframes paw-left-arm {
+@-webkit-keyframes paw-left-arm {
 	0% {
-		transform: rotate(20deg);
+		-webkit-transform: rotate(20deg);
 	}
 	50% {
-		transform: rotate(50deg);
+		-webkit-transform: rotate(50deg);
 	}
 	100% {
-		transform: rotate(20deg);
+		-webkit-transform: rotate(20deg);
 	}
 }
 
-@keyframes paw-right {
+@-webkit-keyframes paw-right {
 	0% {
-		transform: rotate(15deg);
+		-webkit-transform: rotate(15deg);
 	}
 	60% {
-		transform: rotate(15deg);
+		-webkit-transform: rotate(15deg);
 	}
 	80% {
-		transform: rotate(-15deg);
+		-webkit-transform: rotate(-15deg);
 	}
 	100% {
-		transform: rotate(15deg);
+		-webkit-transform: rotate(15deg);
 	}
 }
 
-@keyframes paw-right-arm {
+@-webkit-keyframes paw-right-arm {
 	0% {
-		transform: rotate(-20deg);
+		-webkit-transform: rotate(-20deg);
 	}
 	50% {
-		transform: rotate(-50deg);
+		-webkit-transform: rotate(-50deg);
 	}
 	100% {
-		transform: rotate(-20deg);
+		-webkit-transform: rotate(-20deg);
 	}
 }
 
-@keyframes paw1-left {
+@-webkit-keyframes paw1-left {
 	0% {
-		transform: rotate(-20deg);
+		-webkit-transform: rotate(-20deg);
 	}
 	30% {
-		transform: rotate(-20deg);
+		-webkit-transform: rotate(-20deg);
 	}
 	50% {
-		transform: rotate(20deg);
+		-webkit-transform: rotate(20deg);
 	}
 	100% {
-		transform: rotate(-20deg);
+		-webkit-transform: rotate(-20deg);
 	}
 }
 
-@keyframes paw1-left-arm {
+@-webkit-keyframes paw1-left-arm {
 	0% {
-		transform: rotate(20deg);
+		-webkit-transform: rotate(20deg);
 	}
 	50% {
-		transform: rotate(50deg);
+		-webkit-transform: rotate(50deg);
 	}
 	100% {
-		transform: rotate(20deg);
+		-webkit-transform: rotate(20deg);
 	}
 }
 
-@keyframes paw1-right {
+@-webkit-keyframes paw1-right {
 	0% {
-		transform: rotate(25deg);
+		-webkit-transform: rotate(25deg);
 	}
 	50% {
-		transform: rotate(25deg);
+		-webkit-transform: rotate(25deg);
 	}
 	80% {
-		transform: rotate(-25deg);
+		-webkit-transform: rotate(-25deg);
 	}
 	100% {
-		transform: rotate(25deg);
+		-webkit-transform: rotate(25deg);
 	}
 }
 
-@keyframes paw1-right-arm {
+@-webkit-keyframes paw1-right-arm {
 	0% {
-		transform: rotate(-20deg);
+		-webkit-transform: rotate(-20deg);
 	}
 	50% {
-		transform: rotate(-60deg);
+		-webkit-transform: rotate(-60deg);
 	}
 	100% {
-		transform: rotate(-20deg);
+		-webkit-transform: rotate(-20deg);
 	}
 }
 
 
-@keyframes paw2-left {
+@-webkit-keyframes paw2-left {
 	0% {
-		transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
 	}
 	30% {
-		transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
 	}
 	50% {
-		transform: rotate(40deg);
+		-webkit-transform: rotate(40deg);
 	}
 	100% {
-		transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
 	}
 }
 
-@keyframes paw2-left-arm {
+@-webkit-keyframes paw2-left-arm {
 	0% {
-		transform: rotate(20deg);
+		-webkit-transform: rotate(20deg);
 	}
 	50% {
-		transform: rotate(50deg);
+		-webkit-transform: rotate(60deg);
 	}
 	100% {
-		transform: rotate(20deg);
+		-webkit-transform: rotate(20deg);
 	}
 }
 
-@keyframes paw2-right {
+@-webkit-keyframes paw2-right {
 	0% {
-		transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
 	}
 	50% {
-		transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
 	}
 	80% {
-		transform: rotate(-40deg);
+		-webkit-transform: rotate(-40deg);
 	}
 	100% {
-		transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
 	}
 }
 
-@keyframes paw2-right-arm {
+@-webkit-keyframes paw2-right-arm {
 	0% {
-		transform: rotate(-20deg);
+		-webkit-transform: rotate(-20deg);
 	}
 	50% {
-		transform: rotate(-60deg);
+		-webkit-transform: rotate(-60deg);
 	}
 	100% {
-		transform: rotate(-20deg);
+		-webkit-transform: rotate(-20deg);
 	}
 }
 
-form {
-	position: absolute;
-	top: 0;
-	right: 0
-}
-
-form input[type=text] {
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	background: #f0f0f0;
-	line-height: 18px;
-	font-size: 18px;
-	padding: 10px;
-	width: 200px;
-}
-
-#toggle {
-	top: 3px;
-	right: 205px;
-	position: absolute;
-	width: 100px;
-	height: 35px;
-	cursor: pointer;
-}
